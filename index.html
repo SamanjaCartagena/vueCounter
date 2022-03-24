@@ -21,6 +21,8 @@
       <button @click="add(5)">Add</button>
       <button v-on:click="counter--">Remove</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" v-on:input="setName">
+      <p>Your Name: {{name}}</p>
     </section>
   </body>
 </html>
