@@ -21,7 +21,7 @@
       <button @click="add(5)">Add</button>
       <button v-on:click.right="counter--" >Remove</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName($event, 'Samanja')" v-on:keyup="confirmInput">
+      <input type="text" v-on:input="setName($event, 'Samanja')" v-on:keyup.enter="confirmInput">
       <p>Your Name: {{confirmedName}}</p>
       <form v-on:submit.prevent="submitForm">
         <input type="text">
