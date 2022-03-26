@@ -7,7 +7,7 @@ const app = Vue.createApp({
    }
  }, 
  methods:{
-   confirmedName(){
+   confirmInput(){
      this.confirmedName = this.name;
    },
    add(num){
